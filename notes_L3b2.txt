@@ -130,7 +130,8 @@ audit2R
   ipv6 route 2028:17c:ced1:3::/64 2028:17c:ced1:101::2
   ipv6 route 2028:17c:ced1:4::/64 2028:17c:ced1:104::2
   ipv6 route 2028:17c:ced1:5::/64 2028:17c:ced1:104::2
-  ipv6 route 2028:17c:ced1:6::/64 2028:17c:ced1:104::2
+  --ipv6 route 2028:17c:ced1:6::/64 2028:17c:ced1:104::2
+  ++ipv6 route 2028:17C:CED1:6::/64 2028:17C:CED1:106::2
   ipv6 route 2028:17c:ced1:7::/64 2028:17c:ced1:104::2
   ipv6 route 2028:17c:ced1:8::/64 2028:17c:ced1:104::2
   ipv6 route 2028:17c:ced1:9::/64 2028:17c:ced1:104::2
@@ -527,11 +528,30 @@ EgzR
   ipv6 add 2028:17c:ced1:106::2/64
   int f0/0
   ipv6 add 2028:17c:ced1:6::1/64
-  ex
   int f0/1
   ipv6 add 2028:17c:ced1:204::1/64
-  ex
   ipv6 route ::/0 2028:17c:ced1:106::1
+
+--- need editing:
+  ipv6 route 2028:17c:ced1:1::/64 2028:17c:ced1:106::1
+  ipv6 route 2028:17c:ced1:2::/64 2028:17c:ced1:106::1
+  ipv6 route 2028:17c:ced1:3::/64 2028:17c:ced1:106::1
+  ipv6 route 2028:17c:ced1:201::/64 2028:17c:ced1:106::1
+  ipv6 route 2028:17c:ced1:11::/64 2028:17c:ced1:106::1
+
+  ipv6 route 2028:17c:ced1:6::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:7::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:8::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:9::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:10::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:203::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:204::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:205::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:206::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:207::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:208::/64 2028:17c:ced1:105::1
+  ipv6 route 2028:17c:ced1:209::/64 2028:17c:ced1:105::1
+
  
   
 ------------------------------------------------------------------------------------------
